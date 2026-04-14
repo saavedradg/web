@@ -34,34 +34,6 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJP45SRC7R"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-
-        gtag("config", "G-HJP45SRC7R");
-    </script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6Lfcs6IeAAAAAHDNR2ssWfV3xE5GXi0Ivj5Sz1l3"></script>
-    <script>
-        function onClick(e) {
-            e.preventDefault();
-            grecaptcha.ready(function () {
-                grecaptcha
-                    .execute("6Lfcs6IeAAAAAHDNR2ssWfV3xE5GXi0Ivj5Sz1l3", {
-                        action: "submit",
-                    })
-                    .then(function (token) {
-                        // Add your logic to submit to your backend server here.
-                    });
-            });
-        }
-    </script>
     <style>
         legend {
             border-radius: 5px;
